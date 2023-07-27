@@ -1,17 +1,30 @@
 * {
     margin: 0;
-    background-color: #323131 ;
+    background-color: rgb(21, 21, 21) ;
 }
 
 body{
-    background-color: #323131;
+    background-color: rgb(21, 21, 21);
 }
 
-main{
+/* body{
+    background-color: #232222;
+} */
+
+/* main{
     background-color: #323131;
-}
+} */
 
 table{
     background-color: #323131;
 }
+
+.btn-login{
+    border-color: #9d2053;
+}
+
+.btn-guardar{
+    background-color: #9d2053;
+}
+
 

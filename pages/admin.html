@@ -11,7 +11,7 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
-            <div class="container-fluid d-flex justify-content-between flex-row-reverse align-items-center flex-wrap">
+            <div class="container-fluid">
                 <a class="navbar-brand" href="#">ProTunes</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -19,7 +19,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    <a class="nav-link " aria-current="page" href="#">Inicio</a>
                     </li>
                     <li class="nav-item">
                     <a class="nav-link" href="#">Sobre nosotros...</a>
@@ -29,7 +29,7 @@
                     </li>
                 </ul>
                 <div>
-                    <button class="btn btn-outline-light" type="submit">Log In</button>
+                    <button class="btn btn-outline-light btn-login" type="submit">Log In</button>
                 </div>
             </div>
             </div>
@@ -56,7 +56,7 @@
                     <div class="row mb-2">
                         <div class="col-lg-5 col-md-5 col-sm-6 offset-md-1">
                             <label>Título</label>
-                            <input type="text" class="form-control" id="titulo" required>
+                            <input type="text" class="form-control" id="titulo" placeholder="Título de la canción" required>
                         </div>
                         <div class="col-lg-5 col-md-5 col-sm-6">
                             <label>Artista</label>
@@ -92,13 +92,13 @@
                             <input type="text" class="form-control" id="duracion" placeholder="00:00" required>
                         </div> -->
                         <div class="col-lg-10 col-md-10  offset-md-1">
-                            <label>Imagen</label>
+                            <label>Imagen de la canción</label>
                             <input type="text" class="form-control" placeholder="Url de la imagen"  id="imagen" required/>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col d-flex justify-content-end col-lg-11 col-md-11 mt-3">
-                            <button class="btn btn-success">Guardar</button>
+                            <button class="btn btn-guardar text-white">Guardar</button>
                         </div>
                     </div>
                 </form>
@@ -108,7 +108,7 @@
         <div class="row">
             <h3>Lista de canciones</h3>
             <div class="col" id="contenedor-tabla">
-                <table class="table">
+                <table class="table table-hover table-dark">
                     <thead>
                         <tr>
                             <th scope="col">Título</th>
@@ -118,6 +118,12 @@
                         </tr>
                     </thead>
                     <tbody id="cuerpo-tabla"></tbody>
+                    <tr>
+                        <th scope="row">Dance The Night</th>
+                        <td>Dua Lipa</td>
+                        <td>Pop</td>
+                        <td>2:57</td>
+                    </tr>
                 </table>
             </div>
         </div>
