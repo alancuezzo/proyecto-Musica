@@ -28,7 +28,7 @@ const cargarTabla = () => {
         <td>
             <div class="d-flex gap-2">
                 <i class="fa fa-pencil puntero" onclick="abrirModal(${cancion.id})" aria-hidden="true"></i>
-                <i class="fa fa-trash puntero" onclick="eliminarProducto(${cancion.id})" aria-hidden="true"></i>
+                <i class="fa fa-trash puntero" onclick="eliminarCancion(${cancion.id})" aria-hidden="true"></i>
             </div>
         </td>
         `;
@@ -49,6 +49,7 @@ const eliminarCancion = (id)=>{
     if (validar){
         canciones = [...nuevoArreglo];
         localStorage.setItem("canciones", JSON.stringify(canciones));
+        cargarTabla();
     }
 };
 
