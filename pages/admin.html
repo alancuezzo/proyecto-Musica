@@ -87,10 +87,6 @@
                     </div>
                     
                     <div class="row mb-2">
-                        <!-- <div class="col-lg-2 col-md-2 col-sm-3 offset-md-1">
-                            <label>Duración</label>
-                            <input type="text" class="form-control" id="duracion" placeholder="00:00" required>
-                        </div> -->
                         <div class="col-lg-10 col-md-10  offset-md-1">
                             <label>Imagen de la canción</label>
                             <input type="text" class="form-control" placeholder="Url de la imagen"  id="imagen" required/>
@@ -117,21 +113,87 @@
                             <th scope="col">Duración</th>
                         </tr>
                     </thead>
-                    <tbody id="cuerpo-tabla"></tbody>
-                    <!-- <tr>
-                        <th scope="row">Dance The Night</th>
-                        <td>Dua Lipa</td>
-                        <td>Pop</td>
-                        <td>2:57</td>
-                    </tr> -->
+                    <tbody id="cuerpo-tabla">
+
+                    </tbody>
                 </table>
             </div>
         </div>
 
     </main>
     <footer></footer>
+    <div class="modal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form onsubmit="">
+                        <div class="row mb-2">
+                            <div class="col">
+                                <label>Título</label>
+                                <input type="text" class="form-control" placeholder="Título de la canción" required id="tituloModal"/>
+                            </div>
+                        </div>
+                        <div class="row mb-2">
+                            <div class="col">
+                                <label>Artista</label>
+                                <input type="text" class="form-control" placeholder="Nombre del artista" required id="artistaModal"/>
+                            </div>
+                        </div>
+                        <div class="row mb-2">
+                            <div class="col-8">
+                                <label>Género</label>
+                                <select class="form-select" aria-label="Default select example" required id="generoModal">
+                                <option selected>Seleccionar un género</option>
+                                <option value="electronics">Pop</option>
+                                <option value="Periféricos">Latina</option>
+                                <option value="Accesorios">Hip Hop</option>
+                                <option value="Storage">Cumbia</option>
+                                <option value="Monitores">Reggaeton</option>
+                                <option value="Monitores">Rock</option>
+                                </select>
+                            </div>
+                            <div class="col-4">
+                                <label>Duración</label>
+                                <input
+                                    type="number"
+                                    class="form-control"
+                                    min="0"
+                                    value="0"
+                                    step="0.01"
+                                    placeholder="Duración"
+                                    required
+                                    id="precioModal"
+                                    />
+                            </div>
+                        </div>
+                        <div class="row mb-2">
+                            <div class="col">
+                                <label>Imagen de la canción</label>
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    required
+                                    id="imagenModal"
+                                    />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col d-flex justify-content-end">
+                                <button class="btn btn-guardar">Guardar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
 <script src="/js/global.js"></script>
+<script src="/js/admin.js"></script>
 <script src="/app.js"></script>
 </html>
