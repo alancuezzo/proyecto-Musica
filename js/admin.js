@@ -2,8 +2,13 @@
 let main = document.querySelector("#main");
 
 // tabla y su cuerpo
+// let contenedorTabla = document.querySelector("#contenedor-tabla");
+// let cuerpoTabla = document.querySelector("#cuerpo-tabla");
 let contenedorTabla = document.querySelector("#contenedor-tabla");
 let cuerpoTabla = document.querySelector("#cuerpo-tabla");
+
+
+let canciones = JSON.parse(localStorage.getItem("canciones")) || [];
 
 
 // Funcion para cargar tabla
@@ -16,6 +21,8 @@ let cuerpoTabla = document.querySelector("#cuerpo-tabla");
 </tr>
 */
 
+
+
 const cargarTabla = () => {
     cuerpoTabla.innerHTML = "";
     canciones.forEach((cancion) => {
@@ -25,21 +32,14 @@ const cargarTabla = () => {
         <td>${cancion.artist}</td>
         <td>${cancion.gender}</td>
         <td>${cancion.duration}</td>
-        <td>
-            <div class="d-flex gap-2">
-                <i class="fa fa-pencil puntero" onclick="abrirModal(${cancion.id})" aria-hidden="true"></i>
-                <i class="fa fa-trash puntero" onclick="eliminarCancion(${cancion.id})" aria-hidden="true"></i>
-            </div>
-        </td>
         `;
-
         tableRow.innerHTML = contenidoHTML;
         cuerpoTabla.append(tableRow);
     });
 };
 
 // Funcion eliminar cancion
-
+/*
 const eliminarCancion = (id)=>{
     let nuevoArreglo = canciones.filter((cancion) => {
         return cancion.id != id;
@@ -52,5 +52,5 @@ const eliminarCancion = (id)=>{
         cargarTabla();
     }
 };
-
+*/
 cargarTabla();
