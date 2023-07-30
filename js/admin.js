@@ -1,10 +1,28 @@
+// class Cancion {
+//     constructor(id,
+//  title,
+//   artist,
+//    gender,
+//     duration,
+//      image,
+//       favorite = false
+//       ) {
+//         this.id = id;
+//         this.title = title;
+//         this.artist = artist;
+//         this.gender = gender;
+//         this.duration = duration;
+//         this.image = image;
+//         this.favorite = favorite;
+//     }
+// }
+
 // captura de elementos de admin.html
 let main = document.querySelector("#main");
 
 // tabla y su cuerpo
 let contenedorTabla = document.querySelector("#contenedor-tabla");
 let cuerpoTabla = document.querySelector("#cuerpo-tabla");
-
 
 // Funcion para cargar tabla
 /* estructura tabla
@@ -15,12 +33,17 @@ let cuerpoTabla = document.querySelector("#cuerpo-tabla");
     <td>2:57</td>
 </tr>
 */
+let productos = JSON.parse(localStorage.getItem("productos")) || [];
+
+let indexUpdate = null;
+
+
 
 const cargarTabla = () => {
-    cuerpoTabla.innerHTML = "";
-    canciones.forEach((cancion) => {
-        let tableRow = document.createElement("tr");
-        let contenidoHTML = `
+  cuerpoTabla.innerHTML = "";
+  canciones.forEach((cancion) => {
+    let tableRow = document.createElement("tr");
+    let contenidoHTML = `
         <th scope="row">${cancion.title}</th>
         <td>${cancion.artist}</td>
         <td>${cancion.gender}</td>
@@ -33,24 +56,25 @@ const cargarTabla = () => {
         </td>
         `;
 
-        tableRow.innerHTML = contenidoHTML;
-        cuerpoTabla.append(tableRow);
-    });
+    tableRow.innerHTML = contenidoHTML;
+    cuerpoTabla.append(tableRow);
+  });
 };
+
 
 // Funcion eliminar cancion
 
-const eliminarCancion = (id)=>{
-    let nuevoArreglo = canciones.filter((cancion) => {
-        return cancion.id != id;
-    });
-    // console.log(nuevoArreglo);
-    let validar = confirm(`Esta seguro que desea eliminar la cancion con el id ${id}`);
-    if (validar){
-        canciones = [...nuevoArreglo];
-        localStorage.setItem("canciones", JSON.stringify(canciones));
-        cargarTabla();
-    }
+const eliminarCancion = (id) => {
+  let nuevoArreglo = canciones.filter((cancion) => {
+    return cancion.id != id;
+  });
+  // console.log(nuevoArreglo);
+  let validar = confirm(
+    `Esta seguro que desea eliminar la cancion con el id ${id}`
+  );
+  if (validar) {
+    canciones = [...nuevoArreglo];
+    localStorage.setItem("canciones", JSON.stringify(canciones));
+    cargarTabla();
+  }
 };
-
-cargarTabla();

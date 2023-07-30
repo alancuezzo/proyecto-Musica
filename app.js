@@ -289,5 +289,6 @@ const inicializacion = () => {
         canciones.push(cancion);
     });
     localStorage.setItem("canciones", JSON.stringify(canciones));
+    
 };
 
