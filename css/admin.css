@@ -15,9 +15,10 @@ body{
     background-color: #323131;
 } */
 
-table{
-    background-color: #323131;
+.tableColor{
+    background-color: transparent;
 }
+
 
 .btn-login{
     border-color: #9d2053;
@@ -34,5 +35,21 @@ table{
 .btn-guardar:hover{
     outline: 2px solid #9d2053;
 }
+
+.puntero {
+    cursor: pointer;
+}
+
+.myModal{
+    background-color: #7a1e48;
+}
+
+.listaCanciones{
+    text-align: center;
+    border: 2px solid #7a1e48;
+    border-radius: 1rem;
+    background-color: #7a1e48;
+}
+
 
 
