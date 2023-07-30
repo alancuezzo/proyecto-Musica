@@ -8,7 +8,9 @@
      margin-bottom: 20px;
 
  }
-
+.tipoletra{
+    font-family: 'Kanit', sans-serif;
+}
  .our-team__principal {
      font-family: 'Kanit', sans-serif;
      font-size: 2.5em;
@@ -41,7 +43,7 @@
      border-radius: 50%;
      margin: auto;
      margin-bottom: 20px;
-     border-color: blueviolet;
+     border-color: rgb(113, 49, 203);
      border-style: solid;
 
 
@@ -54,18 +56,23 @@
  :hover.imagen1 {
      -webkit-transform: scale(1.2);
      transform: scale(1.2);
+     cursor: pointer;
      
  }
+ 
 
  :hover.imagen2 {
     -webkit-transform: scale(1.2);
     transform: scale(1.2);
+    cursor: pointer;
 }
 :hover.imagen3 {
     -webkit-transform: scale(1.2);
     transform: scale(1.2);
+    cursor: pointer;
 }
 :hover.imagen4 {
     -webkit-transform: scale(1.2);
     transform: scale(1.2);
+    cursor: pointer;
 }
