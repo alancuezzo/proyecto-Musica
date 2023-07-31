@@ -20,20 +20,21 @@ body{
 }
 
 
-.btn-login{
+.btn-style{
     border-color: #9d2053;
 
 }
-.btn-login:hover{
+/* .btn-login:hover{
     background-color: #9d2053;
-}
+} */
 
-.btn-guardar{
+/* .btn-guardar{
     background-color: #9d2053;
-}
+} */
 
-.btn-guardar:hover{
+.btn-style:hover{
     outline: 2px solid #9d2053;
+    background-color: #9d2053;
 }
 
 .puntero {
@@ -51,5 +52,7 @@ body{
     background-color: #7a1e48;
 }
 
-
-
+.logo{
+    height: 60px;
+    width: 60px;
+}

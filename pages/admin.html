@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Administración</title>
+    <link rel="icon" href="https://dewey.tailorbrands.com/production/brand_version_mockup_image/316/8489586316_883c0020-9903-4222-9cf9-b2c41970f652.png?cb=1690263579">
+    <title>ProTunes|Administración</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/admin.css">
-
 </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">ProTunes</a>
+                <a class="navbar-brand" href="../index.html"> <img class="logo" src="https://dewey.tailorbrands.com/production/brand_version_mockup_image/316/8489586316_883c0020-9903-4222-9cf9-b2c41970f652.png?cb=1690263579" alt="Logo ProTunes"> ProTunes</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
@@ -25,12 +25,9 @@
                     <li class="nav-item">
                     <a class="nav-link" href="./sobreNosotros.html">Sobre nosotros...</a>
                     </li>
-                    <li class="nav-item">
-                    <a class="nav-link">Disabled</a>
-                    </li>
                 </ul>
                 <div>
-                    <button class="btn btn-login text-white" type="submit">Log In</button>
+                    <button class="btn btn-style text-white" type="submit">Log In</button>
                 </div>
             </div>
             </div>
@@ -45,7 +42,7 @@
             </div>
         </div>
 
-        <div class="row my-4">
+        <div class="row my-3">
             <div class="col-12 col-md-8 text-white offset-md-1">
                 <h3>Cargar canción 🎶 </h3>
             </div>
@@ -65,10 +62,6 @@
                         </div>
                     </div>
                     <div class="row mb-2">
-                        <!-- <div class="col-lg-3 col-md-3 col-sm-4 offset-md-1">
-                            <label>Código</label>
-                            <input type="text" class="form-control" id="codigo" required>
-                        </div> -->
                         <div class="col-lg-7 col-md-7 col-sm-8 offset-md-1">
                             <label>Género</label>
                             <select class="form-select" aria-label="Default select example" id="genero">
@@ -95,7 +88,7 @@
                     </div>
                     <div class="row">
                         <div class="col d-flex justify-content-end col-lg-11 col-md-11 mt-3">
-                            <button class="btn btn-guardar text-white">Guardar</button>
+                            <button class="btn btn-style text-white">Guardar</button>
                         </div>
                     </div>
                 </form>
@@ -105,7 +98,7 @@
         <div class="row my-4">
             <h3 class="listaCanciones">Lista de canciones</h3>
             <div class="col" id="contenedor-tabla">
-                <table class="table table-hover table-dark">
+                <table class="table table-hover table-dark ">
                     <thead>
                         <tr>
                             <th scope="col">Título</th>
@@ -115,10 +108,7 @@
                         </tr>
                     </thead>
                     <tbody id="cuerpo-tabla">
-                        <td>
-                            <div class="d-flex gap-2">
-                            </div>
-                            </td>
+                        
                     </tbody>
                 </table>
             </div>
