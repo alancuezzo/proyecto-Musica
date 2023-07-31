@@ -1,13 +1,6 @@
 body{
-    background-color: #111625;
-    background-image:url('https://es.123rf.com/profile_virtosmedia');
+    background-color:rgb(33, 29, 29);
 }
-
-.detallesLog{
-   
-    padding: 10px;
-    border-bottom: 0px;
-    }
 
 
 
@@ -15,7 +8,50 @@ body{
 
 .detalleslog2
 {
-    background-color:#7a1e48;
+    background-color:black;
     color: white;
     font-family: 'Kanit', sans-serif;
 }
+
+.detalleslog3{
+background-color: black;
+}
+
+
+.ov-btn-grow-skew {
+    background: #fff; 
+    color: #4741d7; 
+    border: 2px solid #4741d7; 
+    padding: 16px 20px;
+    border-radius: 3px; 
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    display: inline-block;
+  }
+  .ov-btn-grow-skew:hover {
+    color: #fff;
+  }
+  .ov-btn-grow-skew::after {
+    content: "";
+    background: black; 
+    position: absolute;
+    z-index: -1;
+    padding: 16px 20px;
+    display: block;
+    left: -20%;
+    right: -20%;
+    top: 0;
+    bottom: 0;
+    transform: skewX(-45deg) scale(0, 1);
+    transition: all 0.3s ease;
+  }
+  .ov-btn-grow-skew:hover::after {
+    transition: all 0.3s ease-out;
+    transform: skewX(-45deg) scale(1, 1);
+  }
+
+  .imgpro{
+    height: 100px;
+    
+  }

@@ -21,7 +21,7 @@ const logIn = (event) => {
       localStorage.setItem("user", JSON.stringify(correo));
 
       //Ir a adminitracion
-      location.replace("./nosotros.html");
+      location.replace("./admin.html");
     }
   } else {
     alert("El correo o la contraseña es incoreecta!");
@@ -30,3 +30,7 @@ const logIn = (event) => {
 
 //Escuchadores de eventos
 document.getElementById("formulario").addEventListener("submit", logIn);
+
+//Escuchadores de eventos
+document.getElementById("formulario").addEventListener("submit", logIn);
+
