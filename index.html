@@ -119,8 +119,8 @@
         <nav>
           <ul>
             <li>Mi Libreria <span></span></li>
-            <li>MI LIBRERIA </li>
-            <li>Mi Libreria</li>
+            <li>Sobre Nosotros </li>
+            <li>Contactanos</li>
           </ul>
           <div class="search ">
             <i class="fa-solid fa-magnifying-glass bi"></i>
@@ -181,7 +181,7 @@
             </li>
             <li class="cancion">
               <div class="imgplay">
-                <img src="/assets/img/descarga.jpg" alt="" />
+                <img src="/assets/img/descarga.jpg" alt=""/>
                 <i class="fa-solid fa-circle-play bi playListPlay" id="12"></i>
               </div>
               <h5>
@@ -458,10 +458,10 @@
         </div>
       
         <div class="icon">         
-          <i class="fa-solid fa-shuffle bi"></i>
-          <i class="fa-solid fa-backward-step bi"></i>
+          <i class="fa-solid fa-shuffle shuffle bi">next</i>
+          <i class="fa-solid fa-backward-step bi" id="back"></i>
           <i class="fa-solid fa-play bi" id="masterPlay"></i>
-          <i class="fa-solid fa-forward-step bi"></i>
+          <i class="fa-solid fa-forward-step bi" id="next"></i>
 
           <div class="wave" id="wave">
             <div class="wave1"></div>
@@ -471,11 +471,12 @@
         </div>
 
         <div class="vol">
-          <i class="fa-solid fa-volume-low bi" id="vol_icon"></i>
+          <i class="fa-solid fa-volume-high bi" id="vol_icon"></i>
           <input type="range" min="0" max="100" id="vol">
           <div class="volbar"></div>
           <div class="punto" id="volpunto"></div>
         </div>
+
       </div>
     </main>
     <footer></footer>
@@ -484,6 +485,7 @@
       integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
       crossorigin="anonymous"
     ></script>
+    <script src="/js/admin.js"></script>
     <script src="/js/global.js"></script>
     <script src="/app.js"></script>
     <script src="/index.js"></script>

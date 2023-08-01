@@ -161,7 +161,8 @@ main .menuside .menusong li img {
 
 main .menuside .menusong li h5 {
   font-size: 14px;
-  margin-left: 15px;
+  /* margin-left: 15px; */
+  margin: 5px 0px 5px 0px;
   width: 170px;
   /* border: 1px solid #fff; */
   overflow: hidden;
@@ -297,15 +298,16 @@ main .masterplay .icon .bi {
   outline: none;
 }
 
-/* header .masterplay .icon .fa-shuffle {
+main .masterplay .icon .shuffle {
 
     font-size: 17px;
     margin-right: 10px;
-    width: 17.5px;
+    width: 17px;
     overflow: hidden;
     display: flex;
     align-items: center;
-} */
+    
+}
 
 main .masterplay .icon .bi:nth-child(3) {
   border: 1px solid rgb(105, 105, 105, 0.1);
@@ -332,7 +334,7 @@ main .masterplay .bar {
 main .masterplay .bar .bar2 {
   position: absolute;
   background: #9d2053;
-  width: 50%;
+  width: 0%;
   height: 100%;
   top: 0;
   transition: 1s linear;
@@ -388,7 +390,7 @@ main .masterplay .vol .bi {
 main .masterplay .vol input {
   position: absolute;
   width: 100%;
-  top: -16px;
+  top: -8px;
   left: 0;
   cursor: pointer;
   z-index: 999999999999999999999999999999999999;
@@ -398,9 +400,9 @@ main .masterplay .vol input {
 main .masterplay .vol .volbar {
   position: absolute;
   background: #9d2053;
-  width: 50%;
+  width: 100%;
   height: 100%;
-  transition: 1s linear;
+  transition: 0.3s linear;
 }
 main .masterplay .vol .punto {
   position: absolute;
@@ -408,9 +410,9 @@ main .masterplay .vol .punto {
   height: 5px;
   background: #9d2053;
   border-radius: 50%;
-  left: 0%;
+  left: 100%;
   top: -1.5px;
-  transition: 1s linear;
+  transition: 0.3s linear;
 }
 main .masterplay .vol .punto::before {
   content: "";
