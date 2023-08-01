@@ -1,5 +1,5 @@
 
-const canciones = JSON.parse(localStorage.getItem("canciones")) || [];
+// const canciones = JSON.parse(localStorage.getItem("canciones")) || [];
 
 // Funcion Inicializacion
 
@@ -278,7 +278,7 @@ const inicializacion = () => {
     ];
     
     data.forEach((item)=> {
-        let cancion = new Cancion (
+        let canc = new Cancion (
             item.id,
             item.title,
             item.artist,
@@ -286,7 +286,14 @@ const inicializacion = () => {
             item.duration,
             item.image,
         );
-        canciones.push(cancion);
+        canciones.push(canc);
     });
     localStorage.setItem("canciones", JSON.stringify(canciones));
+    
+};
+    
+
+
+if (canciones == 0){
+    inicializacion();
 };
