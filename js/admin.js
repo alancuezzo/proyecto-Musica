@@ -16,6 +16,28 @@ const myModal = new bootstrap.Modal(document.getElementById("productoModal"));
 let indexUpdate = null;
 
 
+// Funcion validar usuario
+const validarUsuario = () => {
+    let usuario = JSON.parse(localStorage.getItem("user")) || null;
+
+    if (usuario) {
+        cargarTabla();
+    } else {
+        main.innerHTML = "";
+
+        let col = document.createElement("div");
+        col.classList = "row mt-3";
+        let contenido = `<div class="col">
+        <div class="alert alert-danger" role="alert">
+        No tiene permisos para acceder a esta página!
+        </div>
+        </div>
+        `;
+        col.innerHTML = contenido;
+        main.append(col);
+    }
+};
+
 // Funcion para cargar tabla
 /* estructura tabla
 <tr>
