@@ -1,5 +1,5 @@
  body {
-     background-color: #111625;
+     background-color: #000000;
      color: white;
  }
 
@@ -10,31 +10,31 @@
  }
 .tipoletra{
     font-family: 'Kanit', sans-serif;
+
 }
  .our-team__principal {
      font-family: 'Kanit', sans-serif;
      font-size: 2.5em;
  }
 
- .container--flex {
-     align-items: flex-start;
-
- }
+ 
 
  .our-team__tille {
      font-family: 'Kanit', sans-serif;
      font-weight: bold;
-     font-size: 1.8em;
      margin-bottom: 10px;
      color: #7a1e48;
 
  }
+
+
 
  .our-team__text {
      padding: 10px;
      font-family: 'Kanit', sans-serif;
      text-align: justify;
  }
+
 
  .ourteam__img {
      width: 200px;
@@ -43,8 +43,9 @@
      border-radius: 50%;
      margin: auto;
      margin-bottom: 20px;
-     border-color: rgb(147, 105, 32);
+     border-color: violet;
      border-style: solid;
+     justify-content: center;
 
 
  }
