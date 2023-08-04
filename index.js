@@ -365,6 +365,54 @@ popArtistaLeft.addEventListener('click', () => {
      
 // });
 
+//!search data start
+let searchResults = document.getElementsByClassName('searchResults')[0];
+
+songs.forEach(element =>{
+    
+    const {id, title,artist, image} = element;
+    let cardSearch = document.createElement('a');
+    cardSearch.classList.add('cardSearch');
+    cardSearch.href = "#" + id;
+    let cardBuscadora = ` 
+    <img src="${image}" alt="">
+    <div class="content">
+    ${title} 
+    <div class="subtitulo">${artist}</div>
+  </div>
+   
+`;
+    cardSearch.innerHTML = cardBuscadora;
+    searchResults.appendChild(cardSearch);
+});
+
+let input = document.getElementsByTagName('input')[0];
+
+input.addEventListener('keyup', ()=>{
+    let input_value = input.value.toUpperCase();
+    let items = searchResults.getElementsByTagName('a');
+
+    for (let index = 0; index < items.length; index++) {
+        let contenido = items[index].getElementsByClassName('content')[0];
+        let text_value = contenido.textContent || contenido.innerHTML;
+
+        if (text_value.toUpperCase().indexOf(input_value) > -1) {
+            items[index].style.display = 'flex';
+        }else {
+            items[index].style.display = 'none';
+        }
+        
+        if (input.value == 0) {
+            searchResults.style.display = "none";
+        } else{
+            searchResults.style.display = "";
+        }
+    };
+});
+
+//---------------------------------------------------------
+
+
 let masterPlay = document.getElementById('masterPlay');
 let wave = document.getElementById('wave');
 
@@ -383,6 +431,8 @@ masterPlay.addEventListener('click', () =>{
     }
 });
 
+//---------------------------------------------------------
+
 const makeAllPlays = () =>{
     Array.from(document.getElementsByClassName('playListPlay')).forEach((el)=>{
         el.classList.add('fa-circle-play');
@@ -390,11 +440,15 @@ const makeAllPlays = () =>{
     })
 };
 
+//---------------------------------------------------------
+
 const makeAllBackground = () =>{
     Array.from(document.getElementsByClassName('cancion')).forEach((el)=>{
         el.style.background = 'rgb(105, 105, 105, .0)';
     })
 };
+
+//---------------------------------------------------------
 
 let index = 0;
 
@@ -429,9 +483,11 @@ Array.from(document.getElementsByClassName('playListPlay')).forEach((e)=>{
     });
 });
 
+//---------------------------------------------------------
+
 let comienzo = document.getElementById('comienzo');
 let fin = document.getElementById('fin');
-let seek = document.getElementById('seek');
+let barra = document.getElementById('barra');
 let bar2 = document.getElementById('bar2');
 let punto = document.getElementsByClassName('punto')[0];
 
@@ -456,15 +512,15 @@ music.addEventListener('timeupdate', ()=>{
     comienzo.innerText = `${min2}:${sec2}`;
 
     let progressBar = parseInt((music_curr / music_dur) * 100);
-    seek.value = progressBar;
-    let seekbar = seek.value;
-    bar2.style.width = `${seekbar}%`;
-    punto.style.left = `${seekbar}%`;
+    barra.value = progressBar;
+    let barrabar = barra.value;
+    bar2.style.width = `${barrabar}%`;
+    punto.style.left = `${barrabar}%`;
 
 });
 
-seek.addEventListener('change', ()=>{
-    music.currentTime = seek.value * music.duration / 100;
+barra.addEventListener('change', ()=>{
+    music.currentTime = barra.value * music.duration / 100;
 });
 
 let vol_icon = document.querySelector('#vol_icon');
@@ -588,8 +644,14 @@ shuffle.addEventListener('click', ()=>{
     };
 });
 
-music.addEventListener('ended', ()=>{
-    index ++;
+
+
+const nextmusic = () =>{
+    if (index == songs.length) {
+        index = 1;
+    }else{
+        index++;
+    }
     music.src = `/assets/audio/${index}.mp3`;
     postermasterplay.src = `/assets/img/poster/${index}.jpg`;
     music.play();
@@ -613,4 +675,49 @@ music.addEventListener('ended', ()=>{
     el.target.classList.remove('fa-circle-play');
     el.target.classList.add('fa-circle-pause');
     wave.classList.add('active1');
+};
+
+const repeatmusic = () =>{
+    index;
+    music.src = `/assets/audio/${index}.mp3`;
+    postermasterplay.src = `/assets/img/poster/${index}.jpg`;
+    music.play();
+    masterPlay.classList.remove('fa-play');
+    masterPlay.classList.add('fa-pause');
+
+
+    let songTitles = songs.filter((els) =>{
+        return els.id == index;
+    });
+
+    songTitles.forEach(elss =>{
+        let {title} = elss;
+        titulo.innerHTML = title;
+        
+    });
+    
+    makeAllBackground();
+    Array.from(document.getElementsByClassName('cancion'))[index - 1].style.background = "rgb(105, 105, 105, .1)";
+    makeAllPlays();
+    el.target.classList.remove('fa-circle-play');
+    el.target.classList.add('fa-circle-pause');
+    wave.classList.add('active1');
+};
+
+
+
+music.addEventListener('ended', ()=>{
+    
+    let estadoMusica = shuffle.innerHTML;
+
+    switch (estadoMusica) {
+        case 'repeat':
+            repeatmusic();
+            break;
+    case 'next':
+            nextmusic();
+            break;
+   
+    }
 });
+
