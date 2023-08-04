@@ -498,6 +498,60 @@ main .songside nav .search::before {
   z-index: -1;
 }
 
+main .songside nav .search .searchResults{
+  position: absolute;
+  width: 100%;
+  height: 200px;
+  /* border: 1px solid #fff; */
+  margin-top: 10px;
+  border-radius: 10px;
+  overflow: auto;
+
+}
+main .songside nav .search .searchResults::-webkit-scrollbar{
+  display: none;
+    
+}
+
+main .songside nav .search .searchResults .cardSearch{
+  width: 100%;
+  min-height: 45px;
+  /* border: 1px solid #fff; */
+  display: flex;
+  align-items: center;
+  background: rgb(184, 184, 184, .1);
+  margin-bottom: 5px;
+  text-decoration: none;
+  display: none;
+}
+
+main .songside nav .search .searchResults .cardSearch img{
+  width: 35px;
+  height: 35px;
+  border-radius: 5px;
+  
+}
+
+main .songside nav .search .searchResults .cardSearch .content{
+  width: 80%;
+  height: 100%;
+  /* border: 1px solid #fff; */
+  padding: 0;
+  font-size: 13px;
+  font-weight: 600;
+  color: #fff;
+
+  
+}
+
+main .songside nav .search .searchResults .cardSearch .content .subtitulo{
+  font-size: 11px;
+  color: #a4a8b4;
+  font-weight: 500;
+
+  
+}
+
 main .songside nav .search .bi {
   font-size: 13px;
   padding: 7px 0px 0px 10px;
