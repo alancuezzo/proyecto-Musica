@@ -365,7 +365,7 @@ popArtistaLeft.addEventListener('click', () => {
      
 // });
 
-//!search data start
+//!buscardor o search
 let searchResults = document.getElementsByClassName('searchResults')[0];
 
 songs.forEach(element =>{
