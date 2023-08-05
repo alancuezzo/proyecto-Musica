@@ -32,5 +32,5 @@ const logIn = (event) => {
 document.getElementById("formulario").addEventListener("submit", logIn);
 
 //Escuchadores de eventos
-document.getElementById("formulario").addEventListener("submit", logIn);
+// document.getElementById("formulario").addEventListener("submit", logIn);
 
