@@ -1,12 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;600&display=swap');
+
+* {
+    font-family: 'Jost', sans-serif;
+}
+/* nav{
+  background-color: black;
+} */
+
 body{
-    background-color:rgb(33, 29, 29);
+    background-color:#181818;
 }
 
 .detalleslog2
 {
     background-color:black;
     color: white;
-    font-family: 'Kanit', sans-serif;
 }
 
 .detalleslog3{
@@ -51,3 +59,8 @@ background-color: black;
     height: 100px;
     
   }
+
+  .logo{
+    height: 60px;
+    width: 60px;
+}

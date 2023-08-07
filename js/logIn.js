@@ -14,7 +14,6 @@ const logIn = (event) => {
   let password = document.querySelector("#password").value;
 
   //Validar los valores
-  //   if(correo===admin.correo && password===admin.password)
   if (correo === admin.correo) {
     if (password === admin.password) {
       //Enviamos al localS
