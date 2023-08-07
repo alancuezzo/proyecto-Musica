@@ -29,8 +29,8 @@ function sesion () {
     if (usuario) {
         localStorage.removeItem("user");
         btnLogin.innerText = "Log In";
-        location.replace("http://127.0.0.1:5502/index.html");
+        location.replace("http://localhost:5501/pages/sobreNosotros.html");
     } else {
-        location.replace("http://127.0.0.1:5502/pages/logIn.html");
+        location.replace("http://localhost:5501/pages/logIn.html");
     };
 };
