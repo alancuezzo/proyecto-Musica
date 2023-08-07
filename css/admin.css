@@ -1,38 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;600&display=swap');
 * {
     margin: 0;
-    background-color: rgb(21, 21, 21) ;
+    background-color: #181818 ;
     font-family: 'Jost', sans-serif;
 }
 
 body{
-    background-color: rgb(21, 21, 21);
+    background-color: #181818;
 }
-
-/* body{
-    background-color: #232222;
-} */
-
-/* main{
-    background-color: #323131;
-} */
 
 .tableColor{
     background-color: transparent;
 }
 
-
 .btn-style{
     border-color: #9d2053;
 
 }
-/* .btn-login:hover{
-    background-color: #9d2053;
-} */
-
-/* .btn-guardar{
-    background-color: #9d2053;
-} */
 
 .btn-style:hover{
     outline: 2px solid #9d2053;
