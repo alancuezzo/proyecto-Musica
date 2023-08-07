@@ -144,4 +144,6 @@ const actualizarCancion = (event) => {
 };
 
 
-cargarTabla();
+// cargarTabla();
+
+validarUsuario();
