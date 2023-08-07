@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;600&display=swap');
+
+*{
+    font-family: 'Jost', sans-serif;
+}
+
+body{
+    background-color: #181818;  
+}
+
+
+.logo{
+    width: 70px;
+    height: 70px;
+}
+
+.btn-style{
+    border-color: #9d2053;
+}
+
+.btn-style:hover{
+    outline: 2px solid #9d2053;
+    background-color: #9d2053;
+}
+
+.our-team{
+    margin-bottom: 30px;
+    color: white;
+    text-align: center;
+}
+
+
+.our-team__text {
+    color: white;
+    text-align: center;
+}
+
+
+.ourteam__img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border-color: violet;
+    border-style: solid;
+}
+
+.color_interno {
+    background-color: #341931;
+}
+
+:hover.imagen1 {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+
+:hover.imagen2 {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    cursor: pointer;
+}
+:hover.imagen3 {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    cursor: pointer;
+    border-radius: 50%;
+}
+:hover.imagen4 {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.imglogo{
+    height: 200;
+    
+}
