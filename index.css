@@ -366,7 +366,7 @@ main .masterplay .bar input {
   top: -7px;
   left: 0;
   cursor: pointer;
-  z-index: 999999999999999999999999999999999999999;
+  z-index: 3;
   /* transition: 3s linear ; */
   opacity: 0;
 }
@@ -393,7 +393,7 @@ main .masterplay .vol input {
   top: -8px;
   left: 0;
   cursor: pointer;
-  z-index: 999999999999999999999999999999999999;
+  z-index: 3;
   opacity: 0;
 }
 
@@ -436,13 +436,14 @@ main .songside::before {
   height: 40%;
   background: url("/assets/img/songside_img_teddy_swims-removebg-preview.png");
   background-repeat: no-repeat;
+  background-size: 70%;
   z-index: -1;
-  right: -20px;
+  right: -1px;
   
 }
 
 main .songside nav {
-  width: 95%;
+  width: 98%;
   height: 10%;
   /* border: 1px solid #fff; */
   margin: auto;
@@ -458,7 +459,7 @@ main .songside nav ul li {
   position: relative;
   font-size: 13px;
   color: #4c5262;
-  margin-right: 25px;
+  margin-right: 15px;
   cursor: pointer;
   transition: 0.3s linear;
 }
@@ -537,16 +538,16 @@ main .songside nav .search .searchResults .cardSearch .content{
   height: 100%;
   /* border: 1px solid #fff; */
   padding: 0;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 600;
-  color: #fff;
+  color: #9d2053;
 
   
 }
 
 main .songside nav .search .searchResults .cardSearch .content .subtitulo{
   font-size: 11px;
-  color: #a4a8b4;
+  color: #fff;
   font-weight: 500;
 
   
@@ -789,6 +790,8 @@ main .songside .popularArtists .item li img{
   margin-top: 5px;
   background: #121213;
 } */
+
+
 
 @media screen and (min-width: 990px) and (max-width: 1184px) {
   @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Jost&display=swap");
@@ -1572,7 +1575,7 @@ main .songside .popularArtists .item li img{
     border-radius: 50%;
   
   }
-}
+
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
   @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Jost&display=swap");
@@ -4786,4 +4789,3 @@ main .songside .popularArtists .item li img{
     border-radius: 50%;
   
   }
-}
