@@ -738,3 +738,20 @@ music.addEventListener('ended', ()=>{
     }
 });
 
+// ----------------------------
+document.getElementById('botonRedireccionar').addEventListener('click', function() {
+   
+    location.replace('pages/detalle.html');
+});
+document.getElementById('aboutRedireccion').addEventListener('click', function() {
+   
+    location.replace('pages/sobreNosotros.html');
+});
+document.getElementById('adminRedireccion').addEventListener('click', function() {
+   
+    location.replace('pages/admin.html');
+});
+document.getElementById('loginRedireccion').addEventListener('click', function() {
+   
+    location.replace('pages/logIn.html');
+});
