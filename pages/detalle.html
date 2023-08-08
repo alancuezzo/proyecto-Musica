@@ -1,62 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="/style/detalle.css">
-    <title>Document</title>
-  </head>
-  <body>
-    <header></header>
-    <main>
-     <a href="" class="open-modal">VerMas</a>
-    </main>
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
-      integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
-      crossorigin="anonymous"
-    ></script>
-    <section class="modal" id="modal">
-      <div class="modal-container">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://dewey.tailorbrands.com/production/brand_version_mockup_image/316/8489586316_883c0020-9903-4222-9cf9-b2c41970f652.png?cb=1690263579">
+  <title>Detalles de la Canción</title>
+  <link rel="stylesheet" href="/style/detalle.css">
+</head>
+<body>
+  <div class="container">
+    <div id="contenedor"></div>
+    <a href="index.html" class="back-button">Volver a la lista de canciones</a>
+  </div>
 
-          <h2 class="modal-titulo">Detalles de Cancion</h2>
-        
-          <div class="artista-img">
-              <img class="imagen" id="imagen" src="" alt="soda">
-          </div>
-          <div class="info-cancion">
-              <ul>
-                <li id="cancion"></li>
-                <li id="artista"></li>
-                <li id="album"></li>
-                <li id="genero"></li>
-                <li id="duracion"></li>
-              </ul>
-          </div>
-  
-    
-          <a href="" class="modal-close">Cerrar ventana</a>
+  <div class="modal" id="miVentanaModal">
+    <div class="modal-contenido">
+      
+      <img id="imagen" src="" alt="Imagen de la canción">
+      <h2 id="cancion">Nombre de la canción</h2>
+      <p id="artista">Artista</p>
+      <p id="genero">Género</p>
+      <p id="duracion">Duración</p>
+      <button class="reproducir-cancion">Reproducir</button>
+      <button class="close-modal">Cerrar</button>
+      <audio id="audio" controls style="display: none;"></audio>
 
-      </div>
-    </section>
-    <script src="/js/detalle.js" type="module"></script>
-    <script src="/index.js"></script>
+    </div>
+  </div>
 
-  </body>
+  <script src="/js/detalle.js"></script>
+</body>
 </html>
