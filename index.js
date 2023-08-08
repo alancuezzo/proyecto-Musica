@@ -350,6 +350,23 @@ let popArtistaLeft = document.querySelector("#popArtistaLeft");
 let popArtistaRight = document.querySelector("#popArtistaRight");
 let item = document.querySelector(".item");
 
+const listarArtistas = ()=>{
+    item.innerHTML= "";
+     songs.forEach((elemento)=>{
+       let liArtista = document.createElement('li');
+       liArtista.classList- 'cancion';
+    
+       let cardArtista = `
+       <img src="${elemento.image}" alt="${elemento.title}" />
+      `;
+    
+    liArtista.innerHTML = cardArtista;
+    item.appendChild(liArtista);
+    });   
+    };
+    
+    listarArtistas();
+
 popArtistaRight.addEventListener('click', () => {
     item.scrollLeft += 330;
 })
@@ -721,3 +738,20 @@ music.addEventListener('ended', ()=>{
     }
 });
 
+// ----------------------------
+document.getElementById('botonRedireccionar').addEventListener('click', function() {
+   
+    location.replace('pages/detalle.html');
+});
+document.getElementById('aboutRedireccion').addEventListener('click', function() {
+   
+    location.replace('pages/sobreNosotros.html');
+});
+document.getElementById('adminRedireccion').addEventListener('click', function() {
+   
+    location.replace('pages/admin.html');
+});
+document.getElementById('loginRedireccion').addEventListener('click', function() {
+   
+    location.replace('pages/logIn.html');
+});
