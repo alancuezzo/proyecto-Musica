@@ -78,3 +78,7 @@ function cerrarModal() {
 }
 
 closeModal.addEventListener('click', cerrarModal);
+
+const botonReproducir= document.querySelector("reproducir-cancion");
+
+
