@@ -57,14 +57,7 @@ const validarUsuario = () => {
 };
 
 // Funcion para cargar tabla
-/* estructura tabla
-<tr>
-    <th scope="row">Dance The Night</th>
-    <td>Dua Lipa</td>
-    <td>Pop</td>
-    <td>2:57</td>
-</tr>
-*/
+
 
 const cargarTabla = () => {
   cuerpoTabla.innerHTML = "";
