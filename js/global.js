@@ -1,5 +1,5 @@
 class Cancion {
-    constructor(id, title, artist, gender, duration, image, favorite = false) {
+    constructor(id, title, artist, gender, duration, image, favorite = false, artistaimage, song1, song2, song3) {
         this.id = id;
         this.title = title;
         this.artist = artist;
@@ -7,6 +7,10 @@ class Cancion {
         this.duration = duration;
         this.image = image;
         this.favorite = favorite;
+        this.artistaimage = artistaimage;
+        this.song1 = song1;
+        this.song2 = song2;
+        this.song3 = song3;
     }
 };
 
