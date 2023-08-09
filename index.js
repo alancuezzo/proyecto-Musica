@@ -10,6 +10,7 @@ const songs  = [
     duration: "2:57" ,
     image: "https://lastfm.freetls.fastly.net/i/u/500x500/c7c9d41e50a621bc5e23b45ec229705a.jpg",
     favorito: false,
+    imgPerfil: "/assets/perfilArtista/1.png"
 },
 {
     id: 2 ,
@@ -19,6 +20,7 @@ const songs  = [
     duration: "2:58" ,
     image: "https://jenesaispop.com/wp-content/uploads/2019/06/taylor-swift.jpg" ,
     favorito: false,
+    imgPerfil: "/assets/perfilArtista/2.png"
 },
 {
     id: 3 ,
@@ -28,6 +30,7 @@ const songs  = [
     duration: "3:18" ,
     image:"https://i1.sndcdn.com/artworks-2h9w1cyESonW-0-t500x500.jpg" ,
     favorito: false,
+    imgPerfil: "/assets/perfilArtista/3.png"
 },
 {
     id: 4 ,
@@ -37,6 +40,7 @@ const songs  = [
     duration: "2:34" ,
     image:"https://www.lahiguera.net/musicalia/artistas/varios/disco/0/tema/29353/where_she_goes-portada.jpg" ,
     favorito: false,
+    imgPerfil: "/assets/perfilArtista/4.png"
 },
 {
     id: 5 ,
@@ -46,6 +50,7 @@ const songs  = [
     duration: "3:20" ,
     image: "https://cdns-images.dzcdn.net/images/cover/98610629a40996b61b3d24bd5ab8c2e1/500x500.jpg",
     favorito: false,
+    imgPerfil: "/assets/perfilArtista/5.png"
 },
 {
     id: 6 ,
@@ -55,6 +60,7 @@ const songs  = [
     duration: "2:53" ,
     image: "https://i.scdn.co/image/ab67616d0000b273890cfb712167a0186918644e",
     favorito: false,
+    imgPerfil: "/assets/perfilArtista/6.png"
 },
 {
     id: 7 ,
@@ -64,6 +70,7 @@ const songs  = [
     duration: "3:42" ,
     image: "https://linkstorage.linkfire.com/medialinks/images/09c3ce38-a6e7-4fdf-a2bd-67e84a384131/artwork-440x440.jpg",
     favorito: false,
+    imgPerfil: "/assets/perfilArtista/7.png"
 },
 {
     id: 8 ,
@@ -73,6 +80,7 @@ const songs  = [
     duration: "2:46" ,
     image: "https://m.media-amazon.com/images/I/51FGq-xYTeL._UXNaN_FMjpg_QL85_.jpg",
     favorito: false,
+    imgPerfil: "/assets/perfilArtista/8.png"
 },
 {
     id: 9 ,
@@ -82,6 +90,7 @@ const songs  = [
     duration: "2:41" ,
     image: "https://i.scdn.co/image/ab67616d0000b27377ec4341ebb8a0dbfe2df739",
     favorito: false,
+    imgPerfil: "/assets/perfilArtista/9.png"
 },
 {
     id: 10 ,
@@ -91,6 +100,7 @@ const songs  = [
     duration: "2:47" ,
     image: "https://linkstorage.linkfire.com/medialinks/images/a3facb3d-ddeb-4371-af41-a3cc5c7f7841/artwork-440x440.jpg",
     favorito: false,
+    imgPerfil: "/assets/perfilArtista/10.png"
 },
 {
     id: 11 ,
@@ -100,6 +110,7 @@ const songs  = [
     duration: "3:48" ,
     image: "https://i.scdn.co/image/ab67616d0000b273a8b9f97b9ea065b9a857e93f",
     favorito: false,
+    imgPerfil: "/assets/perfilArtista/11.png"
 },
 {
     id: 12 ,
@@ -109,6 +120,7 @@ const songs  = [
     duration: "4:44" ,
     image: "https://f4.bcbits.com/img/a0183287409_65",
     favorito: false,
+    imgPerfil: "/assets/perfilArtista/12.png"
 },
 {
     id: 13 ,
@@ -118,6 +130,7 @@ const songs  = [
     duration: "3:37" ,
     image: "https://lastfm.freetls.fastly.net/i/u/ar0/a73396862c4c2326bae95f73b0a4ac64.jpg",
     favorito: false,
+    imgPerfil: "/assets/perfilArtista/13.png"
 },
 {
     id: 14 ,
@@ -127,6 +140,7 @@ const songs  = [
     duration: "2:49" ,
     image: "https://i.scdn.co/image/ab67616d0000b2737eb80f8193b2d744df5058c0",
     favorito: false,
+    imgPerfil: "/assets/perfilArtista/14.png"
 },
 {
     id: 15 ,
@@ -136,6 +150,7 @@ const songs  = [
     duration: "3:07" ,
     image: "https://i.scdn.co/image/ab67616d0000b27385de3ee7edaa01757845dc6a",
     favorito: false,
+    imgPerfil: "/assets/perfilArtista/15.png"
 },
 {
     id: 16 ,
@@ -145,6 +160,7 @@ const songs  = [
     duration: "5:20" ,
     image: "https://i.scdn.co/image/ab67616d0000b273e885d6895a32a612813bf6d3",
     favorito: false,
+    imgPerfil: "/assets/perfilArtista/16.png"
 },
 {
     id: 17 ,
@@ -154,6 +170,7 @@ const songs  = [
     duration: "5:16" ,
     image: "https://i.scdn.co/image/ab67616d0000b273292c1ca632a1e120d1208c95",
     favorito: false,
+    imgPerfil: "/assets/perfilArtista/17.png"
 },
 {
     id: 18 ,
@@ -163,6 +180,7 @@ const songs  = [
     duration: "4:36" ,
     image: "https://i.scdn.co/image/ab67616d0000b2738fbd25be9c3efc36f01f6dcb",
     favorito: false,
+    imgPerfil: "/assets/perfilArtista/18.png"
 },
 {
     id: 19 ,
@@ -172,6 +190,7 @@ const songs  = [
     duration: "4:55" ,
     image: "https://i.scdn.co/image/ab67616d0000b273a2d9ead62b53a0e9fa01182d",
     favorito: false,
+    imgPerfil: "/assets/perfilArtista/19.png"
 },
 {
     id: 20 ,
@@ -181,6 +200,7 @@ const songs  = [
     duration: "5:34" ,
     image: "https://i.scdn.co/image/ab67616d0000b273c7c1ffa44473871a6f004786",
     favorito: false,
+    imgPerfil: "/assets/perfilArtista/20.png"
 },
 {
     id: 21 ,
@@ -190,6 +210,7 @@ const songs  = [
     duration: "3:24" ,
     image: "https://i.scdn.co/image/ab67616d00001e0226e4d1680cacd81ac0ebe194",
     favorito: false,
+    imgPerfil: "/assets/perfilArtista/21.png"
 },
 {
     id: 22 ,
@@ -199,6 +220,7 @@ const songs  = [
     duration: "4:50" ,
     image: "https://i.scdn.co/image/ab67616d0000b2736665b7cb7ed27000d3d9cf1a",
     favorito: false,
+    imgPerfil: "/assets/perfilArtista/22.png"
 },
 {
     id: 23 ,
@@ -208,6 +230,7 @@ const songs  = [
     duration: "3:12" ,
     image: "https://i.scdn.co/image/ab67616d0000b273387b7088236062cd0b1a1527",
     favorito: false,
+    imgPerfil: "/assets/perfilArtista/23.png"
 },
 {
     id: 24 ,
@@ -217,6 +240,7 @@ const songs  = [
     duration: "3:15" ,
     image: "https://i.scdn.co/image/ab67616d0000b2733e79988a4e5af63f2a239450",
     favorito: false,
+    imgPerfil: "/assets/perfilArtista/24.png"
 },
 {
     id: 25 ,
@@ -226,6 +250,7 @@ const songs  = [
     duration: "3:03" ,
     image: "https://i.scdn.co/image/ab67616d0000b2733540dd039ad4a425cf2522f4",
     favorito: false,
+    imgPerfil: "/assets/perfilArtista/25.png"
 },
 {
     id: 26 ,
@@ -235,6 +260,7 @@ const songs  = [
     duration: "3:31" ,
     image: "https://i.scdn.co/image/ab67616d0000b2736bdcdf82ecce36bff808a40c",
     favorito: false,
+    imgPerfil: "/assets/perfilArtista/26.png"
 },
 {
     id: 27 ,
@@ -244,6 +270,7 @@ const songs  = [
     duration: "3:12" ,
     image: "https://i.scdn.co/image/ab67616d0000b2734787a6dc1c2b9b3bedec9f7d",
     favorito: false,
+    imgPerfil: "/assets/perfilArtista/27.png"
 },
 {
     id: 28 ,
@@ -253,6 +280,7 @@ const songs  = [
     duration: "4:28" ,
     image: "https://i.scdn.co/image/ab67616d0000b2736bb920cebbe9cd79eccaf0e6",
     favorito: false,
+    imgPerfil: "/assets/perfilArtista/28.png"
 },
 {
     id: 29 ,
@@ -262,6 +290,7 @@ const songs  = [
     duration: "3:33" ,
     image: "https://i.scdn.co/image/ab67616d0000b27349d694203245f241a1bcaa72",
     favorito: false,
+    imgPerfil: "/assets/perfilArtista/4.png"
 },
 {
     id: 30 ,
@@ -271,6 +300,7 @@ const songs  = [
     duration: "3:36" ,
     image: "https://i.scdn.co/image/ab67616d0000b273444bab1a00d7bdb978bd8d70",
     favorito: false,
+    imgPerfil: "/assets/perfilArtista/29.png"
 },
 ];
 
@@ -302,7 +332,7 @@ const listarCancionesPop = ()=>{
     };
     listarCancionesPop();
     
-
+//-----------------------------------------------------------
     const listarCancionesIzq = ()=>{
         menusong.innerHTML= "";
          songs.forEach((item)=>{
@@ -325,7 +355,7 @@ const listarCancionesPop = ()=>{
         
         listarCancionesIzq();
        
-    
+ //-----------------------------------------------------------   
 
 //     <li class="cancion">
 //     <div class="imgplay">
@@ -338,6 +368,8 @@ const listarCancionesPop = ()=>{
 //     </h5>
 //   </li>
 
+//-----------------------------------------------------------
+
 cancionPopularRight.addEventListener('click', () => {
     popsong.scrollLeft += 330;
 })
@@ -345,6 +377,8 @@ cancionPopularRight.addEventListener('click', () => {
 cancionPopularLeft.addEventListener('click', () => {
     popsong.scrollLeft -= 330;
 });
+
+//-----------------------------------------------------------
 
 let popArtistaLeft = document.querySelector("#popArtistaLeft");
 let popArtistaRight = document.querySelector("#popArtistaRight");
@@ -367,6 +401,8 @@ const listarArtistas = ()=>{
     
     listarArtistas();
 
+   
+  
 popArtistaRight.addEventListener('click', () => {
     item.scrollLeft += 330;
 })
@@ -375,6 +411,7 @@ popArtistaLeft.addEventListener('click', () => {
     item.scrollLeft -= 330;
 });
 
+//-----------------------------------------------------------
 
 // Array.from(document.getElementsByClassName('cancion')).forEach((e, i )=>{
 //     e.getElementsByTagName('img')[0].src = songs[i].image; 
@@ -382,7 +419,8 @@ popArtistaLeft.addEventListener('click', () => {
      
 // });
 
-//!buscardor o search
+//-----------------------------------------------------------
+
 let searchResults = document.getElementsByClassName('searchResults')[0];
 
 songs.forEach(element =>{
@@ -475,7 +513,7 @@ Array.from(document.getElementsByClassName('playListPlay')).forEach((e)=>{
     e.addEventListener('click', (el)=>{
         index = el.target.id;
         music.src = `/assets/audio/${index}.mp3`;
-        postermasterplay.src = `./assets/img/poster/${index}.jpg`;
+        postermasterplay.src = `/assets/img/poster/${index}.jpg`;
         music.play();
         masterPlay.classList.remove('fa-play');
         masterPlay.classList.add('fa-pause');
@@ -755,3 +793,4 @@ document.getElementById('loginRedireccion').addEventListener('click', function()
    
     location.replace('pages/logIn.html');
 });
+
