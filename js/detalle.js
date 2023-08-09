@@ -17,7 +17,7 @@ const traeDatos = () => {
     let tarjeta = `
     <div class="card mb-3">
     <div class="row g-8">
-      <div class="image-title-container"> <!-- Agregamos una clase aquí -->
+      <div class="image-title-container"> 
         <div class="img-artist">
           <img src="${cancionEncontrada.artistaimage}" class="img-fluid rounded-start p-3" alt="${cancionEncontrada.title}">
         </div>
@@ -30,9 +30,9 @@ const traeDatos = () => {
           <h4>Canciones Populares</h4>
           <ul>
             <li class="popular" id="detalle1"><a>${cancionEncontrada.title} - ${cancionEncontrada.artist}</a></li>
-            <li class="popular"><a href="error.html">${cancionEncontrada.song1} - ${cancionEncontrada.artist}</a></li>
-            <li class="popular"><a href="error.html">${cancionEncontrada.song2} - ${cancionEncontrada.artist}</a></li>
-            <li class="popular"><a href="error.html">${cancionEncontrada.song3} - ${cancionEncontrada.artist}</a></li>
+            <li class="popular"><a href="/pages/error404.html">${cancionEncontrada.song1} - ${cancionEncontrada.artist}</a></li>
+            <li class="popular"><a href="/pages/error404.html">${cancionEncontrada.song2} - ${cancionEncontrada.artist}</a></li>
+            <li class="popular"><a href="/pages/error404.html">${cancionEncontrada.song3} - ${cancionEncontrada.artist}</a></li>
           </ul>
         </div>
       </div>
