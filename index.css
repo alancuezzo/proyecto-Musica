@@ -437,7 +437,7 @@ main .songside::before {
   background: url("/assets/img/songside_img_teddy_swims-removebg-preview.png");
   background-repeat: no-repeat;
   z-index: -1;
-  right: -20px;
+  right: -5px;
   
 }
 
@@ -492,7 +492,7 @@ main .songside nav .search::before {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: rgb(184, 105, 184, 0.1);
+  background: rgb(185, 105, 184, 0.1);
   border-radius: 20px;
   backdrop-filter: blur(5px);
   z-index: -1;
@@ -519,7 +519,7 @@ main .songside nav .search .searchResults .cardSearch{
   /* border: 1px solid #fff; */
   display: flex;
   align-items: center;
-  background: rgb(184, 184, 184, .1);
+  background: rgb(184, 184, 184, 0.5);
   margin-bottom: 5px;
   text-decoration: none;
   display: none;
@@ -537,16 +537,16 @@ main .songside nav .search .searchResults .cardSearch .content{
   height: 100%;
   /* border: 1px solid #fff; */
   padding: 0;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 600;
-  color: #fff;
+  color: #9d2053;
 
   
 }
 
 main .songside nav .search .searchResults .cardSearch .content .subtitulo{
-  font-size: 11px;
-  color: #a4a8b4;
+  font-size: 12px;
+  color: #000000;
   font-weight: 500;
 
   
@@ -651,7 +651,7 @@ main .songside .popularsong .h4 .bi {
   color: #a4a8b4;
   cursor: pointer;
   transition: 0.3s linear;
-  font-size: 15px; /* font size del popular song y flechas */
+  font-size: 15px;
 }
 main .songside .popularsong .h4 .bi:hover {
   color: #fff;
@@ -1307,7 +1307,7 @@ main .songside .popularArtists .item li img{
     /* border: 1px solid #fff; */
     display: flex;
     align-items: center;
-    background: rgb(184, 184, 184, .1);
+    background: rgb(184, 184, 184, .5);
     margin-bottom: 5px;
     text-decoration: none;
     display: none;
@@ -1334,7 +1334,7 @@ main .songside .popularArtists .item li img{
   
   main .songside nav .search .searchResults .cardSearch .content .subtitulo{
     font-size: 11px;
-    color: #fff;
+    color: #000000;
     font-weight: 500;
   
     
@@ -1442,7 +1442,7 @@ main .songside .popularArtists .item li img{
     color: #a4a8b4;
     cursor: pointer;
     transition: 0.3s linear;
-    font-size: 15px; /* font size del popular song y flechas */
+    font-size: 15px; 
   }
   main .songside .popularsong .h4 .bi:hover {
     color: #fff;
@@ -2097,7 +2097,7 @@ main .songside .popularArtists .item li img{
     /* border: 1px solid #fff; */
     display: flex;
     align-items: center;
-    background: rgb(184, 184, 184, .1);
+    background: rgb(184, 184, 184, .5);
     margin-bottom: 5px;
     text-decoration: none;
     display: none;
@@ -2124,7 +2124,7 @@ main .songside .popularArtists .item li img{
   
   main .songside nav .search .searchResults .cardSearch .content .subtitulo{
     font-size: 11px;
-    color: #fff;
+    color: #000000;
     font-weight: 500;
   
     
@@ -2400,7 +2400,7 @@ main .songside .popularArtists .item li img{
   main .menuside,
   .songside {
     width: 25%;
-    height: 90%;
+    height: 100%;
     /* border: 1px solid #fff; */
     background-color: rgb(22, 22, 22);
     color: #fff;
@@ -2901,7 +2901,7 @@ main .songside .popularArtists .item li img{
     /* border: 1px solid #fff; */
     display: flex;
     align-items: center;
-    background: rgb(184, 184, 184, .1);
+    background: rgb(184, 184, 184, .5);
     margin-bottom: 5px;
     text-decoration: none;
     display: none;
@@ -2928,7 +2928,7 @@ main .songside .popularArtists .item li img{
   
   main .songside nav .search .searchResults .cardSearch .content .subtitulo{
     font-size: 11px;
-    color: #fff;
+    color: #000000;
     font-weight: 500;
   
     
@@ -3204,7 +3204,7 @@ main .songside .popularArtists .item li img{
   main .menuside,
   .songside {
     width: 100%;
-    height: 85%;
+    height: 100%;
     /* border: 1px solid #fff; */
     background-color: rgb(22, 22, 22);
     color: #fff;
@@ -3714,7 +3714,7 @@ main .songside .popularArtists .item li img{
     /* border: 1px solid #fff; */
     display: flex;
     align-items: center;
-    background: rgb(184, 184, 184, .1);
+    background: rgb(184, 184, 184, .5);
     margin-bottom: 5px;
     text-decoration: none;
     display: none;
@@ -3741,7 +3741,7 @@ main .songside .popularArtists .item li img{
   
   main .songside nav .search .searchResults .cardSearch .content .subtitulo{
     font-size: 11px;
-    color: #fff;
+    color: #000000;
     font-weight: 500;
   
     
@@ -4017,7 +4017,7 @@ main .songside .popularArtists .item li img{
   main .menuside,
   .songside {
     width: 100%;
-    height: 85%;
+    height: 100%;
     /* border: 1px solid #fff; */
     background-color: rgb(22, 22, 22);
     color: #fff;
@@ -4433,7 +4433,6 @@ main .songside .popularArtists .item li img{
     background-size: 85%;
     z-index: -1;
     right: -50px;
-    
   }
   
   main .songside nav {
@@ -4455,7 +4454,7 @@ main .songside .popularArtists .item li img{
     list-style: none;
     position: relative;
     font-size: 13px;
-    color: #4c5262;
+    color: #575c6c;
     margin-right: 5px;
     cursor: pointer;
     transition: 0.3s linear;
@@ -4522,7 +4521,7 @@ main .songside .popularArtists .item li img{
     /* border: 1px solid #fff; */
     display: flex;
     align-items: center;
-    background: rgb(184, 184, 184, .1);
+    background: rgb(184, 184, 184, .5);
     margin-bottom: 5px;
     text-decoration: none;
     display: none;
@@ -4549,7 +4548,7 @@ main .songside .popularArtists .item li img{
   
   main .songside nav .search .searchResults .cardSearch .content .subtitulo{
     font-size: 11px;
-    color: #fff;
+    color: #000000;
     font-weight: 500;
   
     
