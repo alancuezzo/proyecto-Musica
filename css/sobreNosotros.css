@@ -33,6 +33,7 @@ body{
 .our-team__text {
     color: white;
     text-align: center;
+    font-size: large;
 }
 
 
@@ -83,4 +84,11 @@ body{
     text-align: justify;
     padding: 15px;
     margin-top: 10px;
+    font-size: large;
+}
+
+.txt-inicio{
+    text-align: center;
+    margin-left: 70px;
+    margin-right: 70px;
 }
