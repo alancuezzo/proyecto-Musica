@@ -690,6 +690,7 @@ const inicializacion = () => {
         canciones.push(canc);
     });
     localStorage.setItem("canciones", JSON.stringify(canciones));
+    
 };
     
 

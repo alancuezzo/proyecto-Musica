@@ -1,3 +1,22 @@
+// class Cancion {
+//     constructor(id,
+//  title,
+//   artist,
+//    gender,
+//     duration,
+//      image,
+//       favorite = false
+//       ) {
+//         this.id = id;
+//         this.title = title;
+//         this.artist = artist;
+//         this.gender = gender;
+//         this.duration = duration;
+//         this.image = image;
+//         this.favorite = favorite;
+//     }
+// }
+
 // captura de elementos de admin.html
 let main = document.querySelector("#main");
 
@@ -48,10 +67,10 @@ const validarUsuario = () => {
 */
 
 const cargarTabla = () => {
-    cuerpoTabla.innerHTML = "";
-    canciones.forEach((cancion) => {
-        let tableRow = document.createElement("tr");
-        let contenidoHTML = `
+  cuerpoTabla.innerHTML = "";
+  canciones.forEach((cancion) => {
+    let tableRow = document.createElement("tr");
+    let contenidoHTML = `
         <th scope="row">${cancion.title}</th>
         <td>${cancion.artist}</td>
         <td>${cancion.gender}</td>
