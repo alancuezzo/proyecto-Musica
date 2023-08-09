@@ -26,7 +26,7 @@ let contenedorTabla = document.querySelector("#contenedor-tabla");
 let cuerpoTabla = document.querySelector("#cuerpo-tabla");
 
 
-let canciones = JSON.parse(localStorage.getItem("canciones")) || [];
+// let canciones = JSON.parse(localStorage.getItem("canciones")) || [];
 
 // Viene del modal de admin.html
 const myModal = new bootstrap.Modal(document.getElementById("productoModal"));
