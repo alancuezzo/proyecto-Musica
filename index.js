@@ -781,7 +781,7 @@ music.addEventListener('ended', ()=>{
 // ----------------------------
 document.getElementById('botonRedireccionar').addEventListener('click', function() {
    
-    location.replace('pages/detalle.html');
+    location.replace('pages/error404.html');
 });
 document.getElementById('aboutRedireccion').addEventListener('click', function() {
    
