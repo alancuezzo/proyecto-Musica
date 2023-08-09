@@ -755,3 +755,13 @@ document.getElementById('loginRedireccion').addEventListener('click', function()
    
     location.replace('pages/logIn.html');
 });
+
+document.getElementById('generosRedireccion').addEventListener('click', function() {
+   
+    location.replace('pages/error404.html');
+});
+
+document.getElementById('masEscuchadoRedireccion').addEventListener('click', function() {
+   
+    location.replace('pages/error404.html');
+});
