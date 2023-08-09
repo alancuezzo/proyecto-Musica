@@ -3,7 +3,7 @@ const idCancion = parametro.get("id");
 
 let contenedor = document.querySelector("#contenedor");
 
-// let canciones = JSON.parse(localStorage.getItem("canciones")) || [];
+let canciones = JSON.parse(localStorage.getItem("canciones")) || [];
 
 let cancionEncontrada; 
 
