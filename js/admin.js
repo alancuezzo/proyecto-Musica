@@ -11,6 +11,8 @@ let cuerpoTabla = document.querySelector("#cuerpo-tabla");
 // Viene del modal de admin.html
 const myModal = new bootstrap.Modal(document.getElementById("productoModal"));
 
+let productos = JSON.parse(localStorage.getItem("productos")) || [];
+
 let indexUpdate = null;
 
 
