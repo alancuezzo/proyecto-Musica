@@ -1,21 +1,3 @@
-// class Cancion {
-//     constructor(id,
-//  title,
-//   artist,
-//    gender,
-//     duration,
-//      image,
-//       favorite = false
-//       ) {
-//         this.id = id;
-//         this.title = title;
-//         this.artist = artist;
-//         this.gender = gender;
-//         this.duration = duration;
-//         this.image = image;
-//         this.favorite = favorite;
-//     }
-// }
 
 // captura de elementos de admin.html
 let main = document.querySelector("#main");
@@ -25,8 +7,6 @@ let main = document.querySelector("#main");
 let contenedorTabla = document.querySelector("#contenedor-tabla");
 let cuerpoTabla = document.querySelector("#cuerpo-tabla");
 
-
-// let canciones = JSON.parse(localStorage.getItem("canciones")) || [];
 
 // Viene del modal de admin.html
 const myModal = new bootstrap.Modal(document.getElementById("productoModal"));
@@ -156,6 +136,5 @@ const actualizarCancion = (event) => {
 };
 
 
-// cargarTabla();
 
 validarUsuario();

@@ -515,7 +515,7 @@ Array.from(document.getElementsByClassName('playListPlay')).forEach((e)=>{
     e.addEventListener('click', (el)=>{
         index = el.target.id;
         music.src = `/assets/audio/${index}.mp3`;
-        postermasterplay.src = `${songs.image}`;
+        postermasterplay.src = `/assets/img/poster/${index}.jpg`;
         music.play();
         masterPlay.classList.remove('fa-play');
         masterPlay.classList.add('fa-pause');

@@ -33,8 +33,8 @@ function sesion () {
     if (usuario) {
         localStorage.removeItem("user");
         btnLogin.innerText = "Log In";
-        location.replace("http://localhost:5501/index.html");
+        location.replace("/index.html");
     } else {
-        location.replace("http://localhost:5501/pages/logIn.html");
+        location.replace("/pages/logIn.html");
     };
 };
